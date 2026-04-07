@@ -54,13 +54,13 @@ Each task must include:
 6. Field defaults
 - status: "todo"
 - description: ""
-- subtasks: include only if task is overwhelming
+- subtasks: include only if task is overwhelming, else return undefined
 
 7. Clarity rules
 - Convert vague phrases into actionable tasks
 - Merge duplicates if clearly the same
 - Split unrelated ideas into separate tasks
-- Include subtasks only if isOverwhelming is set to true
+- Include subtasks only if isOverwhelming is set to true, else return undefined
 
 Always return structured, clean, and minimal JSON output.
 `;
