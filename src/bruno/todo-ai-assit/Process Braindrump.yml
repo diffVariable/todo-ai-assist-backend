@@ -1,0 +1,21 @@
+info:
+  name: Process Braindrump
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base-url}}/api/braindump"
+  body:
+    type: json
+    data: |-
+      {
+        "rawInput": "I want to do my homework in PE, email my english teach I can't come tomorrow, build my Art portolfio, and apply to 3 interships"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
